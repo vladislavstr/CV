@@ -24,7 +24,7 @@ body {
     max-height: 842px;
     min-height: 420px;
     margin-top: 20px;
-    box-shadow: 0px 0px 100px 1px gray;
+    box-shadow: 0px 0px 100px 1px $color-new;
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -162,6 +162,7 @@ body {
     .content {
       flex-direction: column;
       align-items: flex-start;
+      justify-content: normal;
     }
     .line {
       height: 100%;
