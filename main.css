@@ -199,7 +199,7 @@ body .upper-part .contacts .details img {
 }
 .content .content-margin .skills .skills-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   justify-items: start;
 }
 .content .content-margin .skills .skills-grid span {
@@ -207,15 +207,14 @@ body .upper-part .contacts .details img {
   font-size: 14px;
 }
 .content .content-margin .skills .skills-grid .skills-shadow {
-  width: 80%;
+  width: 100%;
   box-shadow: inset 0px 0px 5px 1px #40E1B1;
   border-radius: 10px;
   display: flex;
   align-items: center;
 }
 .content .content-margin .skills .skills-grid .skills-shadow .Line {
-  width: 80%;
-  border: 3px solid #6298f4;
+  border: 4px solid #6298f4;
   border-radius: 6px;
   margin-left: 3px;
 }
