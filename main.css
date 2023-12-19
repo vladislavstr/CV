@@ -6,22 +6,22 @@
   font-family: "Gilroy", sans-serif;
   font-size: 10px;
   font-style: normal;
-  color: #ffffff;
+  color: #000000;
 }
 
 body {
-  background-color: #000;
+  background-color: #ffffff;
 }
 body .frame {
   overflow: hidden;
   position: relative;
   margin: 0 auto;
-  max-width: 595px;
+  width: 595px;
   min-width: 297px;
-  max-height: 842px;
+  height: 842px;
   min-height: 420px;
   margin-top: 20px;
-  box-shadow: 0px 0px 100px 1px #0e2de2;
+  box-shadow: 0px 0px 100px 1px rgb(185, 238, 223);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -31,14 +31,15 @@ body .frame {
 body .frame .name {
   font-family: "Press Start 2P", cursive;
   font-size: 20px;
-  background-color: #467aff;
+  background: radial-gradient(92.07% 109.32% at 100% 71.83%, #40E1B1 0%, #26B973 45.83%, #0287CC 100%);
   padding: 10px;
   border-radius: 10px;
+  color: #ffffff;
 }
 body .frame .name .job-title {
   font-family: "DotGothic16", sans-serif;
-  color: #0e2de2;
-  font-size: 15px;
+  color: #ffffff;
+  font-size: 20px;
   text-align: center;
 }
 body .frame .footer {
@@ -49,7 +50,7 @@ body .frame .footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  filter: invert(18%) sepia(96%) saturate(6877%) hue-rotate(238deg) brightness(86%) contrast(108%);
+  filter: brightness(0) saturate(100%) invert(67%) sepia(70%) saturate(377%) hue-rotate(110deg) brightness(99%) contrast(91%);
   bottom: -10px;
   left: -10px;
 }
@@ -64,15 +65,16 @@ body .frame .footer img {
 body .upper-part {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: stretch;
+  padding: 0px 40px;
 }
 body .upper-part .profile-img {
   width: 150px;
   height: 150px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px 5px #0e2de2;
+  box-shadow: 0px 0px 20px 5px rgb(170, 217, 237);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -85,15 +87,18 @@ body .upper-part .profile-img img {
   width: 100%;
 }
 body .upper-part .contacts {
-  box-shadow: 0px 0px 20px 5px #467aff;
-  background-color: #111113;
+  box-shadow: 0px 0px 20px 5px rgb(170, 217, 237);
+  background: var(--unnamed, radial-gradient(176.92% 100.27% at 47.15% 0%, rgba(223, 245, 237, 0.59) 3.65%, rgba(199, 224, 237, 0.55) 100%));
   display: flex;
   flex-direction: column;
   gap: 5px;
   align-items: flex-start;
   justify-content: center;
-  padding: 26px;
+  padding: 28px;
   border-radius: 10px;
+}
+body .upper-part .contacts .links {
+  color: #467aff;
 }
 body .upper-part .contacts .details {
   display: flex;
@@ -105,7 +110,8 @@ body .upper-part .contacts .details img {
 
 .about {
   text-align: left;
-  font-size: 10px;
+  font-size: 12px;
+  color: #2c313f;
 }
 
 .experience {
@@ -115,6 +121,7 @@ body .upper-part .contacts .details img {
 }
 .experience .experience-content span {
   color: #9c9e9f;
+  font-size: 12px;
 }
 .experience .experience-title {
   width: 100%;
@@ -128,12 +135,12 @@ body .upper-part .contacts .details img {
 
 .title {
   font-family: "Press Start 2P", cursive;
-  color: #0e2de2;
-  font-size: 10px;
+  color: #57e15e;
+  font-size: 14px;
 }
 
 .line {
-  border: 2px solid #467aff;
+  border: 2px solid #40E1B1;
   width: 100%;
   border-radius: 2px;
 }
@@ -168,20 +175,24 @@ body .upper-part .contacts .details img {
 }
 .content .firm {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
 }
 .content .post {
   font-style: oblique;
 }
 .content .stack {
-  margin-top: 5px;
+  margin-top: 15px;
+}
+.content .stack span {
+  color: #9c9e9f;
+  font-size: 14px;
 }
 .content .content-margin {
   padding-left: 20px;
   width: 100%;
 }
 .content .content-margin .skills {
-  margin-top: 5px;
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -191,16 +202,20 @@ body .upper-part .contacts .details img {
   grid-template-columns: 1fr 2fr;
   justify-items: start;
 }
+.content .content-margin .skills .skills-grid span {
+  color: #9c9e9f;
+  font-size: 14px;
+}
 .content .content-margin .skills .skills-grid .skills-shadow {
   width: 80%;
-  box-shadow: inset 0px 0px 5px 1px #467aff;
+  box-shadow: inset 0px 0px 5px 1px #40E1B1;
   border-radius: 10px;
   display: flex;
   align-items: center;
 }
 .content .content-margin .skills .skills-grid .skills-shadow .Line {
   width: 80%;
-  border: 3px solid #0e2de2;
+  border: 3px solid #6298f4;
   border-radius: 6px;
   margin-left: 3px;
 }
@@ -212,8 +227,4 @@ body .upper-part .contacts .details img {
 }
 .content .content-margin .skills .skills-grid .skills-shadow .Line#Python {
   width: 50%;
-}
-
-span {
-  color: #9c9e9f;
 }/*# sourceMappingURL=main.css.map */
